@@ -1,0 +1,359 @@
+@font-face {
+    font-family:Retro;
+    src:url(Pixellari.ttf)
+}
+
+
+.text
+{
+    border-color: #36759d;
+    border-style: solid;
+    border-width: 5px;
+
+    color: #36759d;
+
+    padding-bottom: 200px;
+    padding-left: 5px;
+    padding-top: 60px;
+
+
+
+
+  
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 40px;
+    height: 420px;
+    width: 500px;
+    text-align: center;
+    font-family: Retro;
+    background-color: #161616;
+
+
+    margin-right: 50px;
+    margin-top: 5px;
+    position: relative;
+    left: 15px;
+    top:15px;
+
+    text-shadow: 1px 1px 2px rgb(1, 255, 1);
+}
+
+
+
+.arrow1
+{
+    transform: rotate(30deg);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left:250px;
+    bottom: 300px;
+
+    animation: 
+    movement1 1.5s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+.arrow2
+{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 250px;
+    bottom: 300px;
+
+    animation: 
+    movement1 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+.arrow3
+{
+    transform: rotate(-30deg);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left:250px;
+    bottom: 300px;
+
+    animation: 
+    movement1 1.5s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+.arrow4
+{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    right: 400px;
+    bottom: 700px;
+
+    animation: 
+    movement2 0.5s;
+    animation-iteration-count: infinite;
+ 
+
+}
+
+.arrow5
+{
+    transform: rotate(230deg);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 1200px;
+    bottom: 1025px;
+
+    animation: 
+    movement2 1.5s;
+    animation-iteration-count: infinite;
+
+}
+
+.arrow6
+{
+    transform: rotate(-180deg);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 800px;
+    bottom: 1050px;
+
+    animation: 
+    movement2 1.5s;
+    animation-iteration-count: infinite;
+
+
+}
+
+.gameTitle
+{
+    border-color: #36759d;
+    border-style: solid;
+    border-width: 5px;
+
+    color: #36759d;
+
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: Retro;
+    background-color: #161616;
+    text-shadow: 1px 1px 2px rgb(1, 255, 1);
+
+    margin: auto;
+    position: relative;
+    left: 900px;
+    top:3px;
+
+    padding-right: 200px;
+    padding-top: 30px;
+
+    height: 120px;
+}
+
+.robotgif
+{
+    position: relative;
+    bottom: 125px;
+    left: 350px;
+    height: 130px;
+    width: 130px;
+}
+
+.title
+{
+    position: relative;
+    bottom: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: typeEffect 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movement1 {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(100px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+@keyframes movement2 {
+    0% {
+        transform: rotate(-180deg) translateY(0); 
+    }
+    50% {
+        transform: rotate(-180deg) translateY(100px); 
+    }
+    100% {
+        transform: rotate(-180deg) translateY(0); 
+    }
+}
+
+@keyframes typeEffect
+{
+    from
+    {
+        width: 10px;
+    }
+}
+
+
+.writeYourFeedback
+{
+    font-family: Retro;
+    text-shadow: 1px 1px 2px rgb(1, 255, 1);
+    color: #36759d;
+
+
+    position: relative;
+    top: 50px;
+    left: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: typeEffect 5s;
+    animation-iteration-count: infinite;
+}
+
+.launchgame
+{
+    background-color:#161616;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Retro;
+    box-shadow: 3px 3px 3px rgb(1, 255, 1);
+    text-shadow: 1px 1px 2px rgb(1, 255, 1);
+    color: #36759d;
+
+    padding: 100px;
+    position: relative;
+    left: 840px;
+    bottom: 600px;
+}
+
+.terminalinput
+{
+    border: none;
+    color: #36759d;
+    font-family: Retro;
+    font-weight: bolder;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(1, 255, 1);
+    width: 750px;
+    height: 400px;
+    outline: none;
+    position: relative;
+    top: 120px;
+    left: 30px;
+    width: 90%;
+    
+    background: transparent;
+    resize: vertical;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+
+.screen
+{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #36759d;
+    right: 10px;
+    bottom: 150px;
+}
+
+
+.bezel
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.scan
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.img1
+{
+    position: relative;
+    bottom: 1900px;
+    left: 60px;
+}
+
+.img2
+{
+    position: relative;
+    bottom: 1700px;
+    right: 380px;
+}
+
+.img3
+{
+    position: relative;
+    bottom: 1500px;
+    right: 815px;
+}
+
+.missiongif
+{
+    position: relative;
+    left: 35px;
+    bottom: 905px;
+    width: 450px;
+    height: 150px;
+
+}
+
+.screenshots
+{
+    border-color: #36759d;
+    border-style: solid;
+    border-width: 5px;
+
+    color: #36759d;
+
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+    color: #36759d;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Retro;
+    background-color: #161616;
+    text-shadow: 1px 1px 2px rgb(1, 255, 1); 
+
+    position: relative;
+    bottom: 700px;
+    right:  410px;
+    height: 500px;
+
+    
+    width: 500px;
+    height: 750px;
+}
